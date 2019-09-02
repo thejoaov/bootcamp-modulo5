@@ -19,7 +19,7 @@ export default class Main extends Component {
 
   // Carregar os dados do localStorage
   componentDidMount() {
-    document.title = 'Desafio 5: Repositórios';
+    document.title = 'Módulo 5: Repositórios';
     const repositories = localStorage.getItem('repositories');
     if (repositories) {
       this.setState({ repositories: JSON.parse(repositories) });

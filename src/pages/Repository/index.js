@@ -26,7 +26,7 @@ export default class Repository extends Component {
   async componentDidMount() {
     const { match } = this.props;
     const repoName = decodeURIComponent(match.params.repository);
-    document.title = `Desafio 5: ${repoName}`;
+    document.title = `Módulo 5: ${repoName}`;
 
     const [repository, issues] = await Promise.all([
       api.get(`/repos/${repoName}`),
